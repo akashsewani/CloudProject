@@ -1,0 +1,67 @@
+.container
+{
+ background:url("http://127.0.0.1/img/dot.jpg")
+padding:0px;
+}
+
+
+
+@media(max-height:400px){
+.container{
+ padding-top:10px 5px 5px 5px;
+  }}
+@media(max-width:400px){
+.container{
+ padding-top:10px 5px 5px 5px;
+  }
+ }
+
+
+.btn
+{
+padding:0px;
+}
+
+input:hover
+{
+box-shadow:0px 0px 1px 1px teal;
+}
+
+
+
+
+.logo
+{
+height:100px!important;
+
+}
+.img {
+
+padding-bottom:50px;
+
+}
+
+
+.col1
+{
+height:300px;
+border-radius:10px;
+margin:20px;
+opacity:.5;
+padding-top:10px;
+
+
+}
+
+.col1:hover
+{
+width:200px;
+opacity:1;
+}
+
+.circle
+{
+margin-top:50px;
+}
+
+

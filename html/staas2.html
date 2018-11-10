@@ -1,0 +1,190 @@
+<html>
+  <head>
+       <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/akash.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+     <title>STAAS</title>
+
+
+
+</head>
+
+<body>
+<!-- 
+
+<h1 align="center" >Storage As A Service</h1>
+
+
+  
+  <b><form action="/cgi-bin/staas.py">
+  <fieldset>
+<br/>
+<br/>
+    <legend >storage as a service</legend>
+	Enter username:  <input type="text" name="staas_user" placeholder="enter username"/>
+<br/>
+<br/>
+	Enter Password:  <input type="password" name="staas_pass" placeholder="enter Password" />
+<br/>
+<br/>
+<br/>
+<br/>
+        Enter desired ram(in Mb):  <input type="range" name="diskRange" min="0" max="4096"  oninput="this.form.size.value=this.value"/>
+    				<input type="number" name="size" min="0" max="4096" oninput="this.form.diskRange.value=this.value" />
+	
+ 
+<br/>
+<br/>
+<br/>
+<br/>
+
+	enter type of storage:
+<br/> 				
+<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r" value="object" />  <h3>object storage</h3>
+<br/> 				
+<br/> -->
+<!-- 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ro" value="encrypted"/> encrypted
+<br/> 				
+<br/>	 -->
+	<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ro" value="non-encrypted" />non-encrypted
+<br/> 				
+<br/>
+<br/> 				
+<br/>	
+ 
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r" value="block"/><h3> block storage</h3>
+<br/>
+<br/>
+
+
+     <input type="submit"/>
+  </fieldset>
+  </form>
+</b>
+
+ -->
+
+
+
+<form  action="http://192.168.43.163/cgi-bin/staas.py" method="post">
+   <div class="card-panel cyan accent-4 white-text flow-text center-align " ><h4>MeCloud</h4></div>
+   <div class="container z-depth-5">
+ <!-- <div class="row"> -->
+    <!-- <form class="col s12"> -->
+    <div class="row">
+      <div class=" btn col m4 s8 l4 offset-m8 offset-l8 offset-s2 waves-effect waves-light">Storage As A Service</div>
+    </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="staas_user" placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Username</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="staas_pass" id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+     <div class="row">
+        <div class="input-field col s12">
+              <label for="Choose">Select Storage Size Needed (in megabytes) :</label></br>
+            <p class="range-field">
+              <input type="range" id="test5" name="diskRange" min="0" max="4096"  oninput="this.form.size.value=this.value" />
+            </p>
+        </div>
+     </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <div class="input-field col s12">
+            <label for="Choose">Choose The Type Of Storage :</label></br>
+            </div>
+          </div>
+          <div class="input-field col s12">
+
+            <p>
+              <input class="with-gap"  name="r" value="object" type="radio"  id="test1"  />
+              <label for="test1">Object Storage</label>
+            </p>
+               <p>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="with-gap"  name="ro" value="encrypted" type="radio"  id="test11" disabled="disabled"  />
+                <label for="test11">Encrypted Object Storage</label>
+              </p>
+               <p>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="with-gap"  name="ro" value="non-encrypted" type="radio"  id="test12" disabled="disabled"  />
+                <label for="test12">Non-Encrypted Object Storage</label>
+              </p>
+            <p>
+              <input class="with-gap"  name="r" value="block" type="radio"  id="test2" />
+              <label for="test2">Block Storage</label>
+            </p>
+           <p>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="with-gap"  name="ro" value="encrypted" type="radio"  id="test21" disabled="disabled"  />
+                <label for="test21">Encrypted Block Storage</label>
+              </p>
+               <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="with-gap"  name="ro" value="non-encrypted" type="radio"  id="test22" disabled="disabled"  />
+                <label for="test22">Non-Encrypted Block Storage</label>
+              </p>
+         </div>
+
+
+         <div class="col m6 offset-m3 offset-s3">
+            <br/>
+            <br/>
+            <br/>
+            <input class="btn col m3  offset-m4  offset-s4 waves-effect waves-light" value="Submit" type="submit">
+            
+
+        </div>
+      </div>
+     
+     
+    <!-- </<form></form>> -->
+  <!-- </div> -->
+</div>
+<br /><br /><br /><br />
+</form>
+
+
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#test1').on('click', function() {
+    if(document.getElementById('test1').checked) {
+      $('#test11').prop('disabled', false);
+      $('#test12').prop('disabled', false);
+      $('#test21').prop('disabled', true);
+      $('#test22').prop('disabled', true);
+
+
+    }
+
+  });
+   $('#test2').on('click', function() {
+    if(document.getElementById('test2').checked) {
+      $('#test11').prop('disabled', true);
+      $('#test12').prop('disabled', true);
+      $('#test21').prop('disabled', false);
+      $('#test22').prop('disabled', false);
+    }
+
+  });
+});
+
+</script>
+
+</html>
+
+
+
+
+

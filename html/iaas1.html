@@ -1,0 +1,60 @@
+<style>
+div.d
+{
+position: fixed;
+
+height: 100%;
+width:20%;
+}
+</style>
+
+
+<html>
+<center><h1>**INFRASTRUCTURE AS A SERVICE**</h1></center>
+<div class='d'>
+<form action="http://192.168.43.163/cgi-bin/iaas.py">
+<a href="http://192.168.43.163/existing.html" float="right">START existing os</a>
+<br />
+<br />
+<br />
+  User : 
+<br />
+<input name='iaas_user'  type='text' />
+<br />
+<br />
+Pass :
+ <br />
+<br />
+<input type='password' name="iaas_pass" />
+<br />
+<br />
+name of your os:<input name='name'  type='text' />
+<br />
+<br />
+enter the size of RAM(in MB):
+<br />
+<input type='text' name='ram' />
+<br />
+<br />
+enter the number of CPUs:
+<br />
+<input type='text' name='cpu' />
+<br />
+<br />
+choose the operating system:
+<br />
+<br />
+rhel7:  <input type='radio' name='os' value="rhel7" />
+
+
+<br />
+<br />
+<br />
+
+<input type='submit' />
+<input type='reset' />
+<br />
+<br />
+
+
+</html>

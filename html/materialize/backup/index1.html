@@ -1,0 +1,104 @@
+<html>
+<head>
+  <title>login</title>
+  <body>
+    <div class="wrapper align="center">
+   
+ <form action="http://192.168.43.163/cgi-bin/login.py" method="post">
+    <b>Username:  </b><input type="text" class="input"  name="username" placeholder="enter username" >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <b>Password:  </b><input type="password" class="input"  name="password" placeholder="enter Password">
+<br/>
+<br/>
+<br/>
+    <input type="submit" class="login" value="login">
+<br/>
+<br/>
+<br/>
+    <input type='button' class="register" value='Create_Account' onclick="signup()"/>
+
+
+	</div>
+</form>
+  </head>
+</html>
+
+
+
+<style>
+.wrapper
+{
+  height:90%;
+  width:60%;
+  box-shadow:5px 5px 5px 10px;
+  margin-left:20%;
+  
+  background:url("dot.jpg");
+  margin-top:3%;
+ border-radius:5px 5px 5px 5px; 
+}
+
+.input
+{
+margin-top:300px;
+
+
+}
+
+
+.login
+{
+margin-left:380px;
+}
+
+body
+{
+   background:url("http://192.168.43.163/images.jpg");
+}
+.logo
+{
+width:100px;
+height:100px;
+background-color:blue;
+margin-left:45%;
+border-radius:50px 50px 50px 50px ; 
+}
+
+.logo:hover
+{
+width:120px;
+height:120px;
+}
+
+
+h1
+{
+font:10px;
+}
+
+.register
+{
+   box-shadow:5px 5px 5px 1px;
+   float:right;
+   padding:10px;
+   margin:10px;
+}
+
+.register:hover
+{
+
+background-color:red;
+
+}
+
+</style>
+
+<script>
+
+function signup()
+	{
+	document.location="http://192.168.43.163/signup.html"
+	}
+</script>

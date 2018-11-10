@@ -1,0 +1,132 @@
+<html>
+  <head>
+    <title></title>
+<style>
+input
+{
+float:right;
+
+}
+form
+{
+width:50%;
+position:absolute;
+margin-left:25%;
+margin-top:10px;
+
+
+}
+
+
+h3
+{
+
+margin:0px;
+padding:0px;
+}
+
+body
+{
+background:url("dot.jpg")
+}
+
+
+.goback
+{
+  width:60px;
+  height:40px;
+  border:2px solid black;
+
+}
+
+h1
+{
+font-size:64;
+}
+
+
+</style>
+
+
+  </head>
+
+  <body>
+
+
+<h1 align="center" >Storage As A Service</h1>
+
+
+  
+  <b><form action="http://192.168.43.163/cgi-bin/staas.py">
+  <fieldset>
+<br/>
+<br/>
+    <legend >storage as a service</legend>
+	Enter username:  <input type="text" name="staas_user" placeholder="enter username"/>
+<br/>
+<br/>
+	Enter Password:  <input type="password" name="staas_pass" placeholder="enter Password" />
+<br/>
+<br/>
+<br/>
+<br/>
+        Enter desired ram(in Mb):  <input type="range" name="diskRange" min="0" max="4096"  oninput="this.form.size.value=this.value"/>
+    				<input type="number" name="size" min="0" max="4096" oninput="this.form.diskRange.value=this.value" />
+	
+ 
+<br/>
+<br/>
+<br/>
+<br/>
+
+	enter type of storage:
+<br/> 				
+<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r" value="object" />  <h3>object storage</h3>
+<br/> 				
+<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ro" value="encrypted"/> encrypted--------------------------------------------------------------->
+<br/> 				
+<br/>	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ro" value="non-encrypted" />non-encrypted---------------------------------------------------------->
+<br/> 				
+<br/>
+<br/> 				
+<br/>	
+ 
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="r" value="block"/><h3> block storage</h3>
+<br/>
+<br/>
+
+
+     <input type="submit"/>
+  </fieldset>
+  </form>
+</b>
+
+
+
+
+
+
+  </body>
+<br/>
+<br/>
+
+    
+  </fieldset>
+  </form>
+</b>
+
+
+
+
+
+
+  </body>
+
+
+
+
+

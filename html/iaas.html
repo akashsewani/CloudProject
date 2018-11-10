@@ -1,0 +1,119 @@
+
+
+<html>
+ <head>
+      <!--Import Google Icon Font-->
+    <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/akash.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <title>IAAS</title>
+
+	
+    </head>
+
+    <body>
+
+<form  action="http://192.168.43.163/cgi-bin/iaas.py" method="post">
+   <div class="card-panel cyan accent-4 white-text flow-text center-align "><h4>Cloud-i</h4></div>
+   <div class="container z-depth-5">
+
+    <div class="row">
+      <div class=" btn col m4 s8 l4 offset-m8 offset-l8 offset-s2 waves-effect waves-light">Infrastructure As A Service</div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+				<h5><a href="http://192.168.43.163/existing.html" float="right">Start Existing OS -> </a></h5>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s6">
+				<h6 float="right">OR</h6>
+				
+        </div>
+    </div>
+	<div class="row">
+        <div class="input-field col s6">
+				<h5 float="right">Start New OS</h5>
+				
+        </div>
+    </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input name="iaas_user" placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Username</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="iaas_pass" id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="name" placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Enter Desired Name For Your OS : </label>
+        </div>
+       
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="ram" placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Enter Size of RAM (in megabytes) : </label>
+        </div>
+       
+      </div>
+       <div class="row">
+        <div class="input-field col s12">
+          <input name="cpu" placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Enter Number Of CPU's Required : </label>
+        </div>
+       
+      </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <div class="input-field col s12">
+            <label for="Choose"> Choose a desired Operating System :</label>
+            </div>
+          </div>
+          <div class="input-field col s12">
+
+            <p>
+              <input class="with-gap" name="os" value="rhel7" type="radio"  id="test1"  />
+              <label for="test1">Redhat 7</label>
+            </p>
+           
+           
+         </div>
+
+
+         <div class="col m6 offset-m3 offset-s3">
+            <br/>
+            <br/>
+            <br/>
+            <input class="btn col m3  offset-m4  offset-s4 waves-effect waves-light" value="Submit" type="submit">
+            
+
+        </div>
+      </div>
+     
+     
+  
+</div>
+<br /><br /><br /><br />
+</form>
+
+
+
+</body>
+
+</html>
